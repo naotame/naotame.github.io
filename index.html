@@ -1,0 +1,1201 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>王雨纯秀人网 - 官方视频门户 | 影像创作者与内容生态</title>
+<meta name="description" content="王雨纯秀人网官方网站，专注高品质原创影像与人像视频内容的视频品牌门户，持续呈现创作者故事、精品内容与社区动态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1116'/%3E%3Cpath d='M20 42V22l24 10-24 10z' fill='%23ff4d6d'/%3E%3C/svg%3E">
+<style>
+:root{
+  --wyc-bg:#0f1116;
+  --wyc-bg-2:#151824;
+  --wyc-card:#1a1e2b;
+  --wyc-line:#2a3044;
+  --wyc-text:#eef0f6;
+  --wyc-muted:#9aa2b8;
+  --wyc-neon:#ff4d6d;
+  --wyc-neon-2:#3ff0c0;
+  --wyc-amber:#ffcc66;
+  --wyc-radius:16px;
+  --wyc-max:1180px;
+  --wyc-sticky:96px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:var(--wyc-sticky);}
+body{
+  margin:0;
+  background:var(--wyc-bg);
+  color:var(--wyc-text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;}
+p{margin:0 0 1em;}
+.wyc-wrap{max-width:var(--wyc-max);margin:0 auto;padding:0 20px;}
+.wyc-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--wyc-neon-2);font-weight:700;
+}
+.wyc-eyebrow::before{content:"";width:22px;height:2px;background:var(--wyc-neon-2);display:inline-block;}
+.wyc-sec-title{
+  font-size:clamp(22px,2.6vw,32px);
+  margin:10px 0 8px;
+}
+.wyc-sec-lead{color:var(--wyc-muted);max-width:760px;margin-bottom:28px;}
+.wyc-section{padding:64px 0;border-top:1px solid var(--wyc-line);}
+.wyc-section:first-of-type{border-top:none;}
+.wyc-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 20px;border-radius:999px;border:1px solid var(--wyc-line);
+  background:transparent;color:var(--wyc-text);font-size:14px;font-weight:600;
+  transition:.2s;
+}
+.wyc-btn:hover{border-color:var(--wyc-neon);color:var(--wyc-neon);transform:translateY(-1px);}
+.wyc-btn-primary{
+  background:var(--wyc-neon);border-color:var(--wyc-neon);color:#0f1116;
+}
+.wyc-btn-primary:hover{color:#0f1116;filter:brightness(1.08);}
+.wyc-tag{
+  display:inline-block;font-size:12px;padding:2px 10px;border-radius:999px;
+  background:rgba(63,240,192,.12);color:var(--wyc-neon-2);border:1px solid rgba(63,240,192,.28);
+  white-space:nowrap;
+}
+.wyc-tag-coral{background:rgba(255,77,109,.12);color:var(--wyc-neon);border-color:rgba(255,77,109,.3);}
+.wyc-tag-amber{background:rgba(255,204,102,.12);color:var(--wyc-amber);border-color:rgba(255,204,102,.3);}
+.wyc-meta{font-size:13px;color:var(--wyc-muted);display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
+
+/* 吸顶公告 + 页头 */
+.wyc-sticky-top{
+  position:sticky;top:0;z-index:80;
+  background:rgba(15,17,22,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--wyc-line);
+}
+.wyc-announce{
+  background:linear-gradient(90deg,#ff4d6d,#ff8b5e 55%,#ffcc66);
+  color:#14161c;font-size:13px;font-weight:600;
+  padding:8px 0;
+}
+.wyc-announce .wyc-wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.wyc-announce strong{background:#14161c;color:#ffcc66;font-size:11px;padding:2px 8px;border-radius:4px;letter-spacing:.08em;}
+.wyc-announce-list{display:flex;gap:20px;flex-wrap:wrap;}
+.wyc-header{padding:14px 0;}
+.wyc-header .wyc-wrap{display:flex;align-items:center;gap:22px;}
+.wyc-brand-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.02em;flex-shrink:0;}
+.wyc-brand-mark{
+  width:36px;height:36px;border-radius:10px;flex-shrink:0;
+  background:linear-gradient(140deg,var(--wyc-neon),#ff8b5e);
+  display:flex;align-items:center;justify-content:center;color:#14161c;font-size:16px;
+}
+.wyc-nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap;}
+.wyc-nav a{
+  font-size:14px;padding:8px 12px;border-radius:8px;color:var(--wyc-muted);transition:.18s;
+}
+.wyc-nav a:hover,.wyc-nav a:focus-visible{color:var(--wyc-text);background:var(--wyc-bg-2);}
+.wyc-header-tools{display:flex;align-items:center;gap:10px;}
+.wyc-search{
+  display:flex;align-items:center;gap:8px;background:var(--wyc-bg-2);
+  border:1px solid var(--wyc-line);border-radius:999px;padding:6px 14px;transition:.2s;
+}
+.wyc-search:focus-within{border-color:var(--wyc-neon-2);}
+.wyc-search input{
+  background:transparent;border:none;outline:none;color:var(--wyc-text);font-size:13px;width:150px;
+}
+.wyc-search input::placeholder{color:#6b7characterless;}
+.wyc-search input::placeholder{color:#6b7290;}
+.wyc-search button{background:transparent;border:none;color:var(--wyc-neon-2);font-size:13px;font-weight:600;padding:0;}
+.wyc-search-hint{
+  display:none;font-size:12px;color:var(--wyc-neon-2);margin-top:8px;
+}
+.wyc-search-hint.is-visible{display:block;}
+.wyc-burger{
+  display:none;background:transparent;border:1px solid var(--wyc-line);
+  color:var(--wyc-text);border-radius:8px;padding:8px 12px;font-size:18px;line-height:1;
+}
+
+/* 首屏 */
+.wyc-hero{padding:56px 0 64px;position:relative;overflow:hidden;}
+.wyc-hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(720px 340px at 82% 12%,rgba(255,77,109,.18),transparent 70%),
+             radial-gradient(600px 300px at 8% 78%,rgba(63,240,192,.12),transparent 70%);
+}
+.wyc-hero-grid{
+  position:relative;
+  display:grid;grid-template-columns:5fr 5fr;gap:44px;align-items:center;
+}
+.wyc-hero-copy h1{
+  font-size:clamp(34px,5.2vw,60px);
+  letter-spacing:-.02em;
+  margin:14px 0 10px;
+}
+.wyc-hero-copy h1 span{color:var(--wyc-neon);}
+.wyc-hero-slogan{
+  font-size:clamp(16px,1.9vw,20px);color:var(--wyc-amber);font-weight:600;margin-bottom:16px;
+}
+.wyc-hero-desc{color:var(--wyc-muted);max-width:560px;font-size:15.5px;}
+.wyc-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;}
+.wyc-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px;
+  border-top:1px solid var(--wyc-line);padding-top:22px;
+}
+.wyc-hero-stat strong{display:block;font-size:clamp(20px,2.4vw,26px);color:var(--wyc-text);}
+.wyc-hero-stat span{font-size:12.5px;color:var(--wyc-muted);}
+.wyc-hero-visual{
+  position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--wyc-line);
+  aspect-ratio:16/12;box-shadow:0 30px 70px rgba(0,0,0,.5);
+}
+.wyc-hero-visual img{width:100%;height:100%;object-fit:cover;}
+.wyc-hero-badge{
+  position:absolute;left:16px;top:16px;background:rgba(15,17,22,.78);
+  border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:5px 13px;
+  font-size:12px;font-weight:600;color:var(--wyc-neon-2);backdrop-filter:blur(6px);
+}
+.wyc-hero-caption{
+  position:absolute;left:0;right:0;bottom:0;padding:18px 20px;
+  background:linear-gradient(to top,rgba(10,12,18,.94),rgba(10,12,18,.1) 70%);
+  font-size:13.5px;color:#e6e9f4;
+}
+.wyc-hero-caption strong{display:block;font-size:15px;margin-bottom:2px;}
+
+/* 通用卡片 */
+.wyc-card{
+  background:var(--wyc-card);border:1px solid var(--wyc-line);border-radius:var(--wyc-radius);
+  padding:22px;transition:transform .22s,border-color .22s,box-shadow .22s;
+}
+.wyc-card:hover{transform:translateY(-3px);border-color:rgba(255,77,109,.45);box-shadow:0 16px 40px rgba(0,0,0,.38);}
+
+/* 焦点内容 */
+.wyc-focus-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:26px;}
+.wyc-focus-main{
+  overflow:hidden;padding:0;display:flex;flex-direction:column;
+}
+.wyc-focus-main figure{margin:0;aspect-ratio:16/9;overflow:hidden;}
+.wyc-focus-main figure img{width:100%;height:100%;object-fit:cover;}
+.wyc-focus-body{padding:22px;}
+.wyc-focus-body h3{font-size:22px;margin-bottom:8px;}
+.wyc-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;}
+.wyc-list-item{
+  display:flex;gap:16px;padding:16px 18px;border-radius:14px;background:var(--wyc-bg-2);
+  border:1px solid var(--wyc-line);transition:.2s;
+}
+.wyc-list-item:hover{border-color:rgba(63,240,192,.4);}
+.wyc-list-item figure{margin:0;flex:0 0 92px;aspect-ratio:1/1;border-radius:10px;overflow:hidden;}
+.wyc-list-item figure img{width:100%;height:100%;object-fit:cover;}
+.wyc-list-item h3{font-size:16px;margin-bottom:4px;}
+.wyc-list-item p{font-size:13px;color:var(--wyc-muted);margin-bottom:6px;}
+
+/* 视频卡 */
+.wyc-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.wyc-video-card{display:flex;flex-direction:column;padding:0;overflow:hidden;}
+.wyc-video-card figure{margin:0;aspect-ratio:16/9;position:relative;overflow:hidden;}
+.wyc-video-card figure img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
+.wyc-video-card:hover figure img{transform:scale(1.05);}
+.wyc-play{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  pointer-events:none;
+}
+.wyc-play span{
+  width:46px;height:46px;border-radius:50%;background:rgba(15,17,22,.72);
+  border:1px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:14px;backdrop-filter:blur(4px);
+}
+.wyc-video-card .wyc-video-body{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.wyc-video-card h3{font-size:15.5px;}
+.wyc-video-card p{font-size:13px;color:var(--wyc-muted);margin:0;}
+.wyc-video-actions{display:flex;gap:10px;margin-top:auto;padding-top:12px;flex-wrap:wrap;}
+.wyc-act{
+  display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:var(--wyc-muted);
+  background:transparent;border:1px solid var(--wyc-line);border-radius:999px;padding:4px 11px;transition:.18s;
+}
+.wyc-act:hover{color:var(--wyc-text);border-color:var(--wyc-muted);}
+.wyc-act.is-liked{color:var(--wyc-neon);border-color:rgba(255,77,109,.5);}
+.wyc-act.is-saved{color:var(--wyc-amber);border-color:rgba(255,204,102,.5);}
+
+/* 视频列表（文字） */
+.wyc-video-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}
+.wyc-video-list li{
+  display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:14px;align-items:center;
+  padding:14px 16px;border-radius:12px;background:var(--wyc-bg-2);border:1px solid var(--wyc-line);
+}
+.wyc-rank{
+  font-family:"Courier New",monospace;font-size:17px;font-weight:700;color:var(--wyc-neon-2);
+}
+.wyc-video-list h3{font-size:15px;margin-bottom:2px;}
+.wyc-video-list .wyc-meta{font-size:12px;}
+.wyc-time{font-size:12px;color:var(--wyc-muted);font-family:"Courier New",monospace;}
+
+/* 专题 */
+.wyc-topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+.wyc-topic{padding:24px;}
+.wyc-topic-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:6px;}
+.wyc-topic h3{font-size:19px;}
+.wyc-topic ul{margin:14px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;}
+.wyc-topic ul li{font-size:13.5px;color:var(--wyc-muted);display:flex;gap:8px;}
+.wyc-topic ul li::before{content:"▹";color:var(--wyc-neon);flex-shrink:0;}
+.wyc-topic figure{margin:16px 0 0;aspect-ratio:21/9;border-radius:10px;overflow:hidden;}
+.wyc-topic figure img{width:100%;height:100%;object-fit:cover;}
+
+/* 作者 */
+.wyc-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+.wyc-author{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:22px;}
+.wyc-avatar{
+  width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:22px;font-weight:800;color:#14161c;flex-shrink:0;
+}
+.wyc-avatar.a1{background:linear-gradient(135deg,#ff4d6d,#ffcc66);}
+.wyc-avatar.a2{background:linear-gradient(135deg,#3ff0c0,#3f8cff);}
+.wyc-avatar.a3{background:linear-gradient(135deg,#ffcc66,#ff8b5e);}
+.wyc-avatar.a4{background:linear-gradient(135deg,#a78bfa,#ff4d6d);}
+.wyc-avatar.a5{background:linear-gradient(135deg,#3f8cff,#3ff0c0);}
+.wyc-author h3{font-size:16.5px;margin-bottom:3px;}
+.wyc-author .wyc-meta{font-size:12.5px;margin-bottom:8px;}
+.wyc-author p{font-size:13px;color:var(--wyc-muted);margin:0;}
+.wyc-author-link{
+  font-size:12.5px;color:var(--wyc-neon-2);margin-top:10px;display:inline-block;
+  background:none;border:none;padding:0;font-weight:600;
+}
+.wyc-author-link:hover{text-decoration:underline;}
+
+/* 评价 */
+.wyc-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.wyc-review{padding:20px;}
+.wyc-review-stars{color:var(--wyc-amber);font-size:13px;letter-spacing:2px;margin-bottom:8px;}
+.wyc-review p{font-size:13.8px;color:#d6dae8;margin:0 0 10px;}
+.wyc-review footer{font-size:12.5px;color:var(--wyc-muted);}
+
+/* 数据榜 / 动态 / 合作 / FAQ */
+.wyc-split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:34px;}
+.wyc-timeline{list-style:none;margin:0;padding:0;}
+.wyc-timeline li{
+  position:relative;padding:0 0 22px 24px;border-left:1px solid var(--wyc-line);
+}
+.wyc-timeline li:last-child{padding-bottom:0;border-left-color:transparent;}
+.wyc-timeline li::before{
+  content:"";position:absolute;left:-5px;top:7px;width:9px;height:9px;border-radius:50%;
+  background:var(--wyc-neon);box-shadow:0 0 0 4px rgba(255,77,109,.15);
+}
+.wyc-timeline time{font-size:12px;color:var(--wyc-neon-2);font-family:"Courier New",monospace;}
+.wyc-timeline h3{font-size:15.5px;margin:4px 0;}
+.wyc-timeline p{font-size:13px;color:var(--wyc-muted);margin:0;}
+.wyc-partners{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px;}
+.wyc-partner{
+  padding:10px 18px;border:1px dashed var(--wyc-line);border-radius:10px;font-size:13.5px;
+  color:var(--wyc-muted);transition:.2s;
+}
+.wyc-partner:hover{border-color:var(--wyc-neon-2);color:var(--wyc-text);}
+.wyc-faq{border-top:1px solid var(--wyc-line);}
+.wyc-faq details{
+  border-bottom:1px solid var(--wyc-line);padding:16px 0;
+}
+.wyc-faq summary{
+  cursor:pointer;font-weight:600;font-size:15px;list-style:none;display:flex;justify-content:space-between;gap:14px;
+}
+.wyc-faq summary::-webkit-details-marker{display:none;}
+.wyc-faq summary::after{content:"+";color:var(--wyc-neon);font-size:18px;line-height:1;}
+.wyc-faq details[open] summary::after{content:"–";}
+.wyc-faq details p{margin:10px 0 0;font-size:14px;color:var(--wyc-muted);}
+
+/* 深度解析 */
+.wyc-essay p{color:#cfd4e2;font-size:15px;}
+.wyc-essay h3{font-size:19px;margin:26px 0 10px;color:var(--wyc-text);}
+.wyc-essay h3::before{content:"#";color:var(--wyc-neon);margin-right:8px;font-weight:800;}
+.wyc-quote{
+  border-left:3px solid var(--wyc-neon-2);padding:14px 20px;background:var(--wyc-bg-2);
+  border-radius:0 12px 12px 0;color:#d6dae8;font-size:14.5px;margin:20px 0;
+}
+
+/* 页脚 */
+.wyc-footer{border-top:1px solid var(--wyc-line);background:var(--wyc-bg-2);padding:52px 0 28px;margin-top:20px;}
+.wyc-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:34px;}
+.wyc-footer h3{font-size:15px;margin-bottom:12px;}
+.wyc-footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+.wyc-footer li{font-size:13px;color:var(--wyc-muted);}
+.wyc-footer a:hover{color:var(--wyc-neon-2);}
+.wyc-footer-bottom{
+  margin-top:34px;padding-top:20px;border-top:1px solid var(--wyc-line);
+  font-size:12.5px;color:var(--wyc-muted);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+
+/* 弹窗 / Toast */
+.wyc-modal{
+  position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:20px;
+  background:rgba(8,10,15,.78);backdrop-filter:blur(4px);
+}
+.wyc-modal.is-open{display:flex;}
+.wyc-modal-box{
+  max-width:520px;width:100%;background:var(--wyc-card);border:1px solid var(--wyc-line);
+  border-radius:18px;padding:28px;max-height:86vh;overflow:auto;
+}
+.wyc-modal-box h3{font-size:19px;margin-bottom:12px;}
+.wyc-modal-box p{font-size:14px;color:var(--wyc-muted);}
+.wyc-modal-close{
+  float:right;background:transparent;border:1px solid var(--wyc-line);color:var(--wyc-muted);
+  border-radius:8px;padding:4px 10px;font-size:13px;
+}
+.wyc-form-field{margin-top:14px;}
+.wyc-form-field label{display:block;font-size:13px;margin-bottom:6px;color:var(--wyc-muted);}
+.wyc-form-field input,.wyc-form-field textarea,.wyc-form-field select{
+  width:100%;background:var(--wyc-bg-2);border:1px solid var(--wyc-line);color:var(--wyc-text);
+  border-radius:10px;padding:10px 12px;font-size:14px;font-family:inherit;outline:none;
+}
+.wyc-form-field input:focus,.wyc-form-field textarea:focus{border-color:var(--wyc-neon-2);}
+.wyc-modal-actions{display:flex;gap:10px;margin-top:18px;justify-content:flex-end;}
+.wyc-toast{
+  position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);z-index:300;
+  background:var(--wyc-neon-2);color:#10131a;font-weight:700;font-size:13.5px;
+  padding:10px 20px;border-radius:999px;opacity:0;pointer-events:none;transition:.25s;
+}
+.wyc-toast.is-show{opacity:1;transform:translate(-50%,0);}
+.wyc-top{
+  position:fixed;right:22px;bottom:26px;z-index:120;width:44px;height:44px;border-radius:50%;
+  background:var(--wyc-neon);color:#10131a;border:none;font-size:18px;font-weight:800;
+  display:none;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(255,77,109,.4);
+}
+.wyc-top.is-show{display:flex;}
+
+@media (max-width:1000px){
+  .wyc-hero-grid,.wyc-focus-grid,.wyc-split{grid-template-columns:minmax(0,1fr);}
+  .wyc-video-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .wyc-footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:760px){
+  .wyc-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:var(--wyc-bg);
+    border-bottom:1px solid var(--wyc-line);padding:12px 20px;flex-direction:column;
+  }
+  .wyc-nav.is-open{display:flex;}
+  .wyc-header .wyc-wrap{position:relative;flex-wrap:wrap;}
+  .wyc-burger{display:inline-block;margin-left:auto;}
+  .wyc-header-tools{order:3;width:100%;margin-top:10px;}
+  .wyc-search{width:100%;}
+  .wyc-search input{width:100%;}
+  .wyc-video-grid,.wyc-author-grid,.wyc-review-grid,.wyc-topic-grid,.wyc-footer-grid{
+    grid-template-columns:minmax(0,1fr);
+  }
+  .wyc-hero-stats{grid-template-columns:1fr 1fr;}
+  .wyc-video-list li{grid-template-columns:32px minmax(0,1fr);}
+  .wyc-time{grid-column:2;}
+  .wyc-section{padding:44px 0;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="wyc-sticky-top">
+  <div class="wyc-announce">
+    <div class="wyc-wrap">
+      <strong>公告</strong>
+      <div class="wyc-announce-list">
+        <span>《雨纯的城市夜行》第 6 集已上线</span>
+        <span>「冬日人像企划」投稿通道开放至 12 月 18 日</span>
+        <span>创作者扶持计划 2026 年度名单公布</span>
+      </div>
+    </div>
+  </div>
+  <header class="wyc-header">
+    <div class="wyc-wrap">
+      <a class="wyc-brand-logo" href="#wyc-top">
+        <span class="wyc-brand-mark">雨</span>
+        王雨纯秀人网
+      </a>
+      <button class="wyc-burger" id="wycBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+      <nav class="wyc-nav" id="wycNav" aria-label="站内导航">
+        <a href="#wyc-focus">焦点内容</a>
+        <a href="#wyc-videos">精品视频</a>
+        <a href="#wyc-topics">专题企划</a>
+        <a href="#wyc-authors">创作者</a>
+        <a href="#wyc-essay">品牌解析</a>
+        <a href="#wyc-reviews">用户口碑</a>
+        <a href="#wyc-faq">帮助中心</a>
+      </nav>
+      <div class="wyc-header-tools">
+        <form class="wyc-search" id="wycSearchForm" role="search">
+          <input type="search" id="wycSearchInput" placeholder="搜索视频 / 创作者 / 专题" aria-label="站内搜索">
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </div>
+    <div class="wyc-wrap">
+      <div class="wyc-search-hint" id="wycSearchHint"></div>
+    </div>
+  </header>
+</div>
+
+<main id="wyc-top">
+
+  <!-- 首屏 -->
+  <section class="wyc-hero" aria-labelledby="wycHeroTitle">
+    <div class="wyc-wrap wyc-hero-grid">
+      <div class="wyc-hero-copy">
+        <span class="wyc-eyebrow">Official Video Portal · 官方视频门户</span>
+        <h1 id="wycHeroTitle">王雨纯<span>秀人网</span></h1>
+        <p class="wyc-hero-slogan">把人像拍成故事，让每一帧都值得被记住。</p>
+        <p class="wyc-hero-desc">
+          作为深耕人像影像领域的品牌官方网站，王雨纯秀人网以原创、正版、高清为底线，持续为企业与创作者搭建高质感的视频内容生态。这里有城市夜行、自然光人像、胶片质感的实验影像，也有创作者在镜头背后的真实记录。我们相信，值得信赖的影像平台不只是播放器，更是创作者与观众共同成长的社区。
+        </p>
+        <div class="wyc-hero-actions">
+          <a class="wyc-btn wyc-btn-primary" href="#wyc-videos">观看精品内容</a>
+          <a class="wyc-btn" href="#wyc-authors">认识创作者</a>
+          <button class="wyc-btn" type="button" data-wyc-modal="submit">投稿入口</button>
+        </div>
+        <div class="wyc-hero-stats">
+          <div class="wyc-hero-stat"><strong>1860万+</strong><span>累计播放量</span></div>
+          <div class="wyc-hero-stat"><strong>320+</strong><span>签约创作者</span></div>
+          <div class="wyc-hero-stat"><strong>96.4%</strong><span>用户口碑好评率</span></div>
+        </div>
+      </div>
+      <div class="wyc-hero-visual">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23141826'/%3E%3Cstop offset='1' stop-color='%23392136'/%3E%3C/linearGradient%3E%3CradialGradient id='g2' cx='0.68' cy='0.3' r='0.55'%3E%3Cstop offset='0' stop-color='%23ff4d6d' stop-opacity='0.85'/%3E%3Cstop offset='1' stop-color='%23ff4d6d' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g1)'/%3E%3Crect width='800' height='600' fill='url(%23g2)'/%3E%3Ccircle cx='520' cy='250' r='150' fill='none' stroke='%23ffcc66' stroke-opacity='0.55' stroke-width='2'/%3E%3Ccircle cx='520' cy='250' r='196' fill='none' stroke='%23ffcc66' stroke-opacity='0.22' stroke-width='1.5'/%3E%3Cpath d='M300 470 Q520 150 740 470' fill='none' stroke='%233ff0c0' stroke-opacity='0.5' stroke-width='2'/%3E%3Cg fill='%23ffffff' fill-opacity='0.85'%3E%3Ccircle cx='250' cy='180' r='3'/%3E%3Ccircle cx='640' cy='430' r='2.5'/%3E%3Ccircle cx='400' cy='120' r='2'/%3E%3C/g%3E%3Crect x='0' y='480' width='800' height='120' fill='%230f1116' fill-opacity='0.55'/%3E%3C/svg%3E" alt="王雨纯秀人网官方首屏主视觉：夜色中的人像剪影与霓虹光环" width="800" height="600">
+        <span class="wyc-hero-badge">官方发布 · 原创正版</span>
+        <div class="wyc-hero-caption">
+          <strong>本期主推《夜色城市 · 雨纯》</strong>
+          用一盏路灯与一场细雨，完成一次关于城市与人像的影像实验。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="wyc-section" id="wyc-focus" aria-labelledby="wycFocusTitle">
+    <div class="wyc-wrap">
+      <span class="wyc-eyebrow">Focus · 焦点推荐</span>
+      <h2 class="wyc-sec-title" id="wycFocusTitle">本周焦点：王雨纯秀人网的精品内容清单</h2>
+      <p class="wyc-sec-lead">从人像短片到创作幕后，编辑团队每周从平台上万条内容中筛选出值得被反复观看的影像。所有内容均为原创正版，高清呈现。</p>
+      <div class="wyc-focus-grid">
+        <article class="wyc-card wyc-focus-main">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 506'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23102633'/%3E%3Cstop offset='1' stop-color='%232b1430'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='506' fill='url(%23f1)'/%3E%3Cg stroke='%233ff0c0' stroke-opacity='0.45' fill='none'%3E%3Cpath d='M0 380 Q225 240 450 340 T900 300'/%3E%3Cpath d='M0 420 Q225 300 450 380 T900 360'/%3E%3C/g%3E%3Cg fill='%23ffcc66'%3E%3Ccircle cx='180' cy='150' r='34' fill-opacity='0.85'/%3E%3Ccircle cx='700' cy='110' r='5'/%3E%3Ccircle cx='760' cy='160' r='3'/%3E%3C/g%3E%3Cpath d='M120 480 L300 200 L480 480 Z' fill='%23ff4d6d' fill-opacity='0.18'/%3E%3C/svg%3E" alt="焦点推荐：城市雨夜人像短片主视觉，霓虹与雨线交叠" width="900" height="506">
+          </figure>
+          <div class="wyc-focus-body">
+            <span class="wyc-tag wyc-tag-coral">重点推荐</span>
+            <h3>《城市雨夜 · 一镜到底的人像呼吸感》</h3>
+            <p>王雨纯与摄影团队用一条连续长镜头穿过三个街区，在真实雨夜中完成拍摄。视频收录了完整成片与 8 分钟幕后解说，拆解低照度环境下的补光思路、镜头运动节奏与人像焦段选择，是今年平台上被反复引用的原创案例。</p>
+            <div class="wyc-meta">
+              <span>作者：王雨纯</span><span>播放 128.4 万</span><span>收藏 3.6 万</span><span>时长 12:48</span>
+            </div>
+            <div class="wyc-video-actions">
+              <button class="wyc-act" data-wyc-like aria-pressed="false">♡ 喜欢 <span>2.4万</span></button>
+              <button class="wyc-act" data-wyc-save aria-pressed="false">☆ 收藏</button>
+              <button class="wyc-act" data-wyc-copy data-wyc-title="城市雨夜 · 一镜到底的人像呼吸感">⧉ 复制链接</button>
+            </div>
+          </div>
+        </article>
+        <ul class="wyc-list">
+          <li class="wyc-list-item">
+            <figure><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%231b2233'/%3E%3Ccircle cx='100' cy='78' r='36' fill='%23ffcc66' fill-opacity='0.8'/%3E%3Cpath d='M40 200 Q100 110 160 200' fill='%23ff4d6d' fill-opacity='0.45'/%3E%3C/svg%3E" alt="自然光人像系列缩略图：逆光下的侧脸轮廓" width="200" height="200"></figure>
+            <div>
+              <h3>《窗边的自然光 · 三分钟人像布光》</h3>
+              <p>只用一扇窗和一块反光板，讲清日常生活中最容易复刻的人像光线。</p>
+              <div class="wyc-meta"><span class="wyc-tag">教程干货</span><span>播放 62.1 万</span></div>
+            </div>
+          </li>
+          <li class="wyc-list-item">
+            <figure><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23231628'/%3E%3Cg stroke='%233ff0c0' stroke-opacity='0.6' fill='none'%3E%3Cpath d='M20 160 Q100 40 180 160'/%3E%3Cpath d='M20 180 Q100 90 180 180'/%3E%3C/g%3E%3Ccircle cx='100' cy='70' r='22' fill='%23a78bfa' fill-opacity='0.75'/%3E%3C/svg%3E" alt="胶片质感专题缩略图：颗粒与曲线构成的抽象画面" width="200" height="200"></figure>
+            <div>
+              <h3>《胶片颗粒的克制使用》深度测评</h3>
+              <p>三种胶片模拟方案横向测评，给出适合社媒发布与影院放映的两套参数。</p>
+              <div class="wyc-meta"><span class="wyc-tag wyc-tag-amber">深度测评</span><span>播放 41.7 万</span></div>
+            </div>
+          </li>
+          <li class="wyc-list-item">
+            <figure><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23142522'/%3E%3Crect x='34' y='60' width='132' height='80' rx='12' fill='%233ff0c0' fill-opacity='0.35'/%3E%3Cpath d='M86 88 L124 100 L86 112 Z' fill='%23ffffff' fill-opacity='0.85'/%3E%3C/svg%3E" alt="创作者访谈缩略图：镜头与播放符号的组合" width="200" height="200"></figure>
+            <div>
+              <h3>《镜头之后：与人像摄影师的四十分钟对谈》</h3>
+              <p>聊创作焦虑、拍摄伦理与商业合作的边界，一次不回避问题的访谈。</p>
+              <div class="wyc-meta"><span class="wyc-tag">人物访谈</span><span>播放 28.9 万</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 精品视频 -->
+  <section class="wyc-section" id="wyc-videos" aria-labelledby="wycVideosTitle">
+    <div class="wyc-wrap">
+      <span class="wyc-eyebrow">Videos · 精品视频</span>
+      <h2 class="wyc-sec-title" id="wycVideosTitle">精品视频：王雨纯秀人网的高清原创内容</h2>
+      <p class="wyc-sec-lead">三列等高卡片呈现平台本季度的重点内容，涵盖日常记录、教程干货与创作幕后。每条内容均标注作者与真实播放数据，支持喜欢、收藏与复制链接。</p>
+      <div class="wyc-video-grid">
+        <article class="wyc-card wyc-video-card">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23141826'/%3E%3Ccircle cx='340' cy='96' r='58' fill='%23ff4d6d' fill-opacity='0.6'/%3E%3Cpath d='M0 216 Q120 140 240 196 T480 176' stroke='%233ff0c0' stroke-width='2' fill='none' stroke-opacity='0.7'/%3E%3Cg fill='%23ffffff' fill-opacity='0.7'%3E%3Ccircle cx='96' cy='70' r='3'/%3E%3Ccircle cx='420' cy='60' r='2'/%3E%3C/g%3E%3C/svg%3E" alt="视频封面：清晨城市天际线与逆光人像" width="480" height="270">
+            <div class="wyc-play"><span>▶</span></div>
+          </figure>
+          <div class="wyc-video-body">
+            <span class="wyc-tag">日常记录</span>
+            <h3>《清晨六点的天台，和一场没有脚本的拍摄》</h3>
+            <p>没有分镜、没有妆造，只有日出与临时起意。记录一次自然发生的人像拍摄。</p>
+            <div class="wyc-meta"><span>王雨纯</span><span>播放 38.2 万</span><span>09:12</span></div>
+            <div class="wyc-video-actions">
+              <button class="wyc-act" data-wyc-like aria-pressed="false">♡ 喜欢 <span>8213</span></button>
+              <button class="wyc-act" data-wyc-save aria-pressed="false">☆ 收藏</button>
+              <button class="wyc-act" data-wyc-copy data-wyc-title="清晨六点的天台，和一场没有脚本的拍摄">⧉ 复制</button>
+            </div>
+          </div>
+        </article>
+        <article class="wyc-card wyc-video-card">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23231628'/%3E%3Cg stroke='%23ffcc66' stroke-opacity='0.75' fill='none' stroke-width='2'%3E%3Crect x='60' y='60' width='150' height='150' rx='10'/%3E%3Cpath d='M240 135 H420'/%3E%3Cpath d='M360 95 L400 135 L360 175'/%3E%3C/g%3E%3Ccircle cx='135' cy='135' r='24' fill='%233ff0c0' fill-opacity='0.6'/%3E%3C/svg%3E" alt="视频封面：布光示意图与柔光箱造型" width="480" height="270">
+            <div class="wyc-play"><span>▶</span></div>
+          </figure>
+          <div class="wyc-video-body">
+            <span class="wyc-tag wyc-tag-amber">教程干货</span>
+            <h3>《一盏灯也能拍人像？五种低成本补光方案》</h3>
+            <p>从台灯、反光板到白墙反射，把预算有限变成创意空间，附完整灯位图。</p>
+            <div class="wyc-meta"><span>林知夏</span><span>播放 51.6 万</span><span>14:03</span></div>
+            <div class="wyc-video-actions">
+              <button class="wyc-act" data-wyc-like aria-pressed="false">♡ 喜欢 <span>1.3万</span></button>
+              <button class="wyc-act" data-wyc-save aria-pressed="false">☆ 收藏</button>
+              <button class="wyc-act" data-wyc-copy data-wyc-title="一盏灯也能拍人像？五种低成本补光方案">⧉ 复制</button>
+            </div>
+          </div>
+        </article>
+        <article class="wyc-card wyc-video-card">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23142522'/%3E%3Cg fill='%233ff0c0' fill-opacity='0.35'%3E%3Crect x='40' y='150' width='60' height='80'/%3E%3Crect x='120' y='110' width='60' height='120'/%3E%3Crect x='200' y='70' width='60' height='160'/%3E%3C/g%3E%3Ccircle cx='360' cy='110' r='46' fill='%23a78bfa' fill-opacity='0.6'/%3E%3C/svg%3E" alt="视频封面：剪辑软件时间线与声波图形" width="480" height="270">
+            <div class="wyc-play"><span>▶</span></div>
+          </figure>
+          <div class="wyc-video-body">
+            <span class="wyc-tag wyc-tag-coral">创作幕后</span>
+            <h3>《从 4 小时素材到 3 分钟成片：我的剪辑取舍》</h3>
+            <p>公开完整项目时间线与废片清单，讲清楚为什么删掉比留下更需要判断力。</p>
+            <div class="wyc-meta"><span>周叙白</span><span>播放 44.9 万</span><span>18:26</span></div>
+            <div class="wyc-video-actions">
+              <button class="wyc-act" data-wyc-like aria-pressed="false">♡ 喜欢 <span>1.1万</span></button>
+              <button class="wyc-act" data-wyc-save aria-pressed="false">☆ 收藏</button>
+              <button class="wyc-act" data-wyc-copy data-wyc-title="从 4 小时素材到 3 分钟成片：我的剪辑取舍">⧉ 复制</button>
+            </div>
+          </div>
+        </article>
+        <article class="wyc-card wyc-video-card">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%231b2233'/%3E%3Cpath d='M0 200 L120 120 L240 180 L360 100 L480 160' stroke='%23ffcc66' stroke-width='3' fill='none'/%3E%3Cg fill='%23ffffff' fill-opacity='0.65'%3E%3Ccircle cx='120' cy='120' r='5'/%3E%3Ccircle cx='360' cy='100' r='5'/%3E%3C/g%3E%3Crect x='40' y='40' width='120' height='16' rx='8' fill='%23ff4d6d' fill-opacity='0.7'/%3E%3C/svg%3E" alt="视频封面：城市地图与路线轨迹" width="480" height="270">
+            <div class="wyc-play"><span>▶</span></div>
+          </figure>
+          <div class="wyc-video-body">
+            <span class="wyc-tag">城市探索</span>
+            <h3>《沿着老城区的光走一整天》城市影像漫步</h3>
+            <p>一条路线、六个取景点，用手持镜头记录老街的午后光线与生活声响。</p>
+            <div class="wyc-meta"><span>苏未</span><span>播放 33.4 万</span><span>11:47</span></div>
+            <div class="wyc-video-actions">
+              <button class="wyc-act" data-wyc-like aria-pressed="false">♡ 喜欢 <span>7642</span></button>
+              <button class="wyc-act" data-wyc-save aria-pressed="false">☆ 收藏</button>
+              <button class="wyc-act" data-wyc-copy data-wyc-title="沿着老城区的光走一整天">⧉ 复制</button>
+            </div>
+          </div>
+        </article>
+        <article class="wyc-card wyc-video-card">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23281226'/%3E%3Cg fill='none' stroke='%23ff4d6d' stroke-opacity='0.6'%3E%3Ccircle cx='240' cy='135' r='90'/%3E%3Ccircle cx='240' cy='135' r='60'/%3E%3Ccircle cx='240' cy='135' r='30'/%3E%3C/g%3E%3Crect x='0' y='0' width='480' height='270' fill='none' stroke='%233ff0c0' stroke-opacity='0.3'/%3E%3C/svg%3E" alt="视频封面：同心圆构成的镜头光斑图案" width="480" height="270">
+            <div class="wyc-play"><span>▶</span></div>
+          </figure>
+          <div class="wyc-video-body">
+            <span class="wyc-tag wyc-tag-amber">艺术美学</span>
+            <h3>《留白不是空的：人像构图里的呼吸感》</h3>
+            <p>用二十张实拍对比图，讲清三分法之外的留白逻辑与视觉重心迁移。</p>
+            <div class="wyc-meta"><span>顾南</span><span>播放 27.8 万</span><span>10:15</span></div>
+            <div class="wyc-video-actions">
+              <button class="wyc-act" data-wyc-like aria-pressed="false">♡ 喜欢 <span>6298</span></button>
+              <button class="wyc-act" data-wyc-save aria-pressed="false">☆ 收藏</button>
+              <button class="wyc-act" data-wyc-copy data-wyc-title="留白不是空的：人像构图里的呼吸感">⧉ 复制</button>
+            </div>
+          </div>
+        </article>
+        <article class="wyc-card wyc-video-card">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23101824'/%3E%3Cg stroke='%23ffcc66' stroke-width='2' fill='none'%3E%3Cpath d='M60 210 L160 120 L260 180 L360 90 L420 130'/%3E%3C/g%3E%3Crect x='300' y='180' width='120' height='50' rx='8' fill='%233ff0c0' fill-opacity='0.25'/%3E%3Ctext x='316' y='212' font-size='20' fill='%233ff0c0' font-family='monospace'%3E96%25%3C/text%3E%3C/svg%3E" alt="视频封面：上升折线与数据面板" width="480" height="270">
+            <div class="wyc-play"><span>▶</span></div>
+          </figure>
+          <div class="wyc-video-body">
+            <span class="wyc-tag">行业观察</span>
+            <h3>《人像视频的 2026：从炫技到真实》</h3>
+            <p>基于平台三万条内容样本，分析观众审美迁移与创作者转型的三个信号。</p>
+            <div class="wyc-meta"><span>王雨纯</span><span>播放 36.5 万</span><span>16:38</span></div>
+            <div class="wyc-video-actions">
+              <button class="wyc-act" data-wyc-like aria-pressed="false">♡ 喜欢 <span>8931</span></button>
+              <button class="wyc-act" data-wyc-save aria-pressed="false">☆ 收藏</button>
+              <button class="wyc-act" data-wyc-copy data-wyc-title="人像视频的 2026：从炫技到真实">⧉ 复制</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="wyc-section" id="wyc-topics" aria-labelledby="wycTopicsTitle">
+    <div class="wyc-wrap">
+      <span class="wyc-eyebrow">Series · 专题企划</span>
+      <h2 class="wyc-sec-title" id="wycTopicsTitle">专题企划：围绕王雨纯秀人网展开的长期创作</h2>
+      <p class="wyc-sec-lead">平台以季度为单位发起专题企划，鼓励创作者在同一命题下给出不同答案。以下专题持续更新，接受社区投稿与投票。</p>
+      <div class="wyc-topic-grid">
+        <article class="wyc-card wyc-topic">
+          <div class="wyc-topic-head">
+            <h3>「冬日人像企划」第三季</h3>
+            <span class="wyc-tag wyc-tag-coral">更新中</span>
+          </div>
+          <p class="wyc-meta">主理：王雨纯工作室 · 已收录 46 条原创内容</p>
+          <ul>
+            <li>《冷风里的暖色：围巾与呼出的白气》</li>
+            <li>《雪后清晨的四十五分钟》</li>
+            <li>《室内窗光下的冬日肖像》</li>
+          </ul>
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 630 270'%3E%3Crect width='630' height='270' fill='%23152030'/%3E%3Cg fill='%23ffffff' fill-opacity='0.75'%3E%3Ccircle cx='90' cy='70' r='3'/%3E%3Ccircle cx='200' cy='120' r='2.5'/%3E%3Ccircle cx='330' cy='60' r='2'/%3E%3Ccircle cx='470' cy='100' r='3'/%3E%3Ccircle cx='560' cy='50' r='2'/%3E%3C/g%3E%3Cpath d='M0 220 Q160 150 320 200 T630 180' stroke='%23ffcc66' stroke-width='2' fill='none' stroke-opacity='0.6'/%3E%3Ccircle cx='500' cy='150' r='40' fill='%23ff4d6d' fill-opacity='0.35'/%3E%3C/svg%3E" alt="冬日人像企划专题配图：飘雪与暖色光点" width="630" height="270">
+          </figure>
+        </article>
+        <article class="wyc-card wyc-topic">
+          <div class="wyc-topic-head">
+            <h3>「镜头之后」创作者访谈录</h3>
+            <span class="wyc-tag">连载中</span>
+          </div>
+          <p class="wyc-meta">主理：编辑部 · 每月两期 · 已发布 18 期</p>
+          <ul>
+            <li>《林知夏：我怕的不是失败，是一直重复自己》</li>
+            <li>《周叙白：剪辑是把情绪重新排序》</li>
+            <li>《苏未：城市会记住每一个认真走路的人》</li>
+          </ul>
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 630 270'%3E%3Crect width='630' height='270' fill='%23221826'/%3E%3Cg fill='%23a78bfa' fill-opacity='0.55'%3E%3Crect x='60' y='180' width='40' height='50' rx='4'/%3E%3Crect x='120' y='140' width='40' height='90' rx='4'/%3E%3Crect x='180' y='100' width='40' height='130' rx='4'/%3E%3C/g%3E%3Ccircle cx='420' cy='120' r='52' fill='%23ff4d6d' fill-opacity='0.4'/%3E%3Cpath d='M300 230 H580' stroke='%233ff0c0' stroke-width='2' stroke-opacity='0.6'/%3E%3C/svg%3E" alt="访谈录专题配图：声波柱与圆形人像剪影" width="630" height="270">
+          </figure>
+        </article>
+        <article class="wyc-card wyc-topic">
+          <div class="wyc-topic-head">
+            <h3>「一镜到底」技术挑战赛</h3>
+            <span class="wyc-tag wyc-tag-amber">报名中</span>
+          </div>
+          <p class="wyc-meta">主办：平台技术委员会 · 报名截止 12 月 18 日</p>
+          <ul>
+            <li>挑战规则：单条镜头，允许一次隐藏剪辑</li>
+            <li>评审维度：叙事完整度、镜头调度、声画同步</li>
+            <li>奖励：年度创作者合约与高清摄影器材支持</li>
+          </ul>
+        </article>
+        <article class="wyc-card wyc-topic">
+          <div class="wyc-topic-head">
+            <h3>「在地文化」城市影像档案</h3>
+            <span class="wyc-tag">长期企划</span>
+          </div>
+          <p class="wyc-meta">联合地方文化机构 · 已覆盖 12 座城市</p>
+          <ul>
+            <li>《一条巷子的三十年：老理发店影像记录》</li>
+            <li>《码头清晨：渔市的声音与光》</li>
+            <li>《手艺人的第七天：竹编与镜头》</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="wyc-section" id="wyc-authors" aria-labelledby="wycAuthorsTitle">
+    <div class="wyc-wrap">
+      <span class="wyc-eyebrow">Creators · 创作者矩阵</span>
+      <h2 class="wyc-sec-title" id="wycAuthorsTitle">在王雨纯秀人网持续成长的创作者</h2>
+      <p class="wyc-sec-lead">平台重视创作者的真实表达与长期发展。以下五位是人像影像领域的签约创作者，点击可查看完整档案与代表作品。</p>
+      <div class="wyc-author-grid">
+        <article class="wyc-card wyc-author">
+          <div class="wyc-avatar a1" aria-hidden="true">王</div>
+          <div>
+            <h3>王雨纯</h3>
+            <div class="wyc-meta"><span>人像导演 / 影像叙事</span><span>作品 128</span><span>粉丝 186.4 万</span></div>
+            <p>长期以人像短片与城市记录为主要创作方向，习惯在真实环境中寻找画面秩序。她主张“先理解人，再端起相机”，作品以克制的色调与自然的情绪著称，是平台原创内容生态的核心创作者之一。</p>
+            <button class="wyc-author-link" data-wyc-modal="author" data-wyc-name="王雨纯" data-wyc-field="人像导演 / 影像叙事" data-wyc-works="128" data-wyc-fans="186.4万" data-wyc-bio="长期以人像短片与城市记录为主要创作方向，习惯在真实环境中寻找画面秩序，主张先理解人再端起相机，作品以克制色调与自然情绪著称。">查看创作者档案 →</button>
+          </div>
+        </article>
+        <article class="wyc-card wyc-author">
+          <div class="wyc-avatar a2" aria-hidden="true">林</div>
+          <div>
+            <h3>林知夏</h3>
+            <div class="wyc-meta"><span>布光教程 / 摄影教学</span><span>作品 96</span><span>粉丝 92.7 万</span></div>
+            <p>摄影教学博主，擅长把复杂布光拆成可执行的步骤，被社区称为“把灯位画明白的人”。她的教程大量使用现场对照图，让新手也能在出租屋完成一张看得过去的人像作品。</p>
+            <button class="wyc-author-link" data-wyc-modal="author" data-wyc-name="林知夏" data-wyc-field="布光教程 / 摄影教学" data-wyc-works="96" data-wyc-fans="92.7万" data-wyc-bio="摄影教学博主，擅长把复杂布光拆成可执行步骤，被社区称为把灯位画明白的人，教程大量使用现场对照图，帮助新手在有限空间中完成人像拍摄。">查看创作者档案 →</button>
+          </div>
+        </article>
+        <article class="wyc-card wyc-author">
+          <div class="wyc-avatar a3" aria-hidden="true">周</div>
+          <div>
+            <h3>周叙白</h3>
+            <div class="wyc-meta"><span>剪辑 / 后期调色</span><span>作品 74</span><span>粉丝 61.3 万</span></div>
+            <p>后期创作者，专注剪辑节奏与色彩统一。他坚持公开项目文件与废片清单，认为“删掉的素材同样值得被讨论”，其长视频在平台内被大量收藏作为学习资料。</p>
+            <button class="wyc-author-link" data-wyc-modal="author" data-wyc-name="周叙白" data-wyc-field="剪辑 / 后期调色" data-wyc-works="74" data-wyc-fans="61.3万" data-wyc-bio="后期创作者，专注剪辑节奏与色彩统一，坚持公开项目文件与废片清单，认为删掉的素材同样值得被讨论，其长视频被大量收藏作为学习资料。">查看创作者档案 →</button>
+          </div>
+        </article>
+        <article class="wyc-card wyc-author">
+          <div class="wyc-avatar a4" aria-hidden="true">苏</div>
+          <div>
+            <h3>苏未</h3>
+            <div class="wyc-meta"><span>城市探索 / 声景记录</span><span>作品 63</span><span>粉丝 48.5 万</span></div>
+            <p>城市影像作者，喜欢用声音打开空间。她的视频常常先录环境声再补画面，让一条街的呼吸先于镜头出现，作品带有强烈的在地文化气息与生活温度。</p>
+            <button class="wyc-author-link" data-wyc-modal="author" data-wyc-name="苏未" data-wyc-field="城市探索 / 声景记录" data-wyc-works="63" data-wyc-fans="48.5万" data-wyc-bio="城市影像作者，喜欢用声音打开空间，视频常常先录环境声再补画面，让一条街的呼吸先于镜头出现，作品带有强烈的在地文化气息与生活温度。">查看创作者档案 →</button>
+          </div>
+        </article>
+        <article class="wyc-card wyc-author">
+          <div class="wyc-avatar a5" aria-hidden="true">顾</div>
+          <div>
+            <h3>顾南</h3>
+            <div class="wyc-meta"><span>构图美学 / 艺术短片</span><span>作品 51</span><span>粉丝 37.9 万</span></div>
+            <p>艺术短片导演，关注画面内部的秩序与留白。他的作品常被用于平台的新人培训案例，讲解如何在有限画幅里安排视线与情绪，风格冷静但不失温度。</p>
+            <button class="wyc-author-link" data-wyc-modal="author" data-wyc-name="顾南" data-wyc-field="构图美学 / 艺术短片" data-wyc-works="51" data-wyc-fans="37.9万" data-wyc-bio="艺术短片导演，关注画面内部的秩序与留白，作品常被用于平台新人培训案例，讲解如何在有限画幅里安排视线与情绪，风格冷静但不失温度。">查看创作者档案 →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="wyc-section" id="wyc-essay" aria-labelledby="wycEssayTitle">
+    <div class="wyc-wrap">
+      <span class="wyc-eyebrow">Insight · 深度解析</span>
+      <h2 class="wyc-sec-title" id="wycEssayTitle">关键词解析：王雨纯秀人网的品牌逻辑与内容方法论</h2>
+      <div class="wyc-split">
+        <div class="wyc-essay">
+          <p>“王雨纯秀人网”这个组合词，表面上是一个名字加一个内容品类，实际指向的是一种以个人影像风格为核心、以平台化运营为支撑的内容形态。理解它，需要同时看懂三层关系：人、影像与社区。作为官方网站，我们把这套关系拆成可被检验的内容标准，而不是停留在口号层面。</p>
+          <h3>人像不是道具：创作主体的位置</h3>
+          <p>在很多同类内容里，被拍摄者容易沦为构图的填充物。王雨纯秀人网从一开始就把“人”放在创作主体的位置：拍摄前必须有沟通，拍摄中保留被拍摄者的选择权，成片发布前需经本人确认。这不是形式流程，而是内容品质的基础。平台内部的内容审核细则里，明确把“是否尊重被拍摄者意愿”写进评估维度，与画质、构图、剪辑并列。也正因如此，平台上的人像作品普遍呈现出一种松弛感——被拍摄者知道自己在被理解，而不是被消费。</p>
+          <p>这种理念也影响了教程类内容的方向。林知夏的布光教程里，第一步永远是“先聊聊你想呈现什么样的自己”，然后才进入灯位讨论。观众在评论区说，看完之后最先记住的不是参数，而是这句话。这正是平台希望传递的创作观：技术服务于表达，而不是反过来。</p>
+          <h3>内容生态：从单条爆款到持续运营</h3>
+          <p>一个视频品牌能不能长期成立，取决于它是否具备持续运营的能力。王雨纯秀人网采取的是“专题制 + 创作者签约 + 社区投稿”的三层结构。专题制保证内容有主线，比如冬日人像企划已经连续做了三季，观众形成了稳定的观看预期；创作者签约保证供给质量，平台为签约作者提供拍摄场地、设备支持与后期协作；社区投稿则保证活力，任何用户都可以通过投稿入口提交作品，优秀作品会进入官方推荐位。</p>
+          <p>这套结构带来的直接结果是内容多样性。你可以在同一天看到一镜到底的技术实验、出租屋里的低成本人像、老城区的声景记录，以及关于行业审美的数据观察。它们共享同一套品质标准，但表达路径完全不同。对于一个垂直领域平台来说，这种“统一标准下的多元表达”比单纯追求流量更难得，也更接近内容生态的本意。</p>
+          <h3>品质与口碑：高清、正版与可追溯</h3>
+          <p>“高清”在这个行业里经常被滥用，但在王雨纯秀人网，它有明确的技术定义：正片统一提供 1080P 起步的码率，重点内容提供 4K 版本，封面与截图不允许过度锐化。所有上线内容均完成版权登记与授权确认，转载需注明来源。这些看起来偏“后台”的工作，最终决定了观众的第一印象，也决定了品牌能否被称为值得信赖。</p>
+          <p>口碑则来自更细的地方。比如视频页会标注拍摄地点与设备信息，方便学习者复现；比如评论区保留不同意见，只要不涉及人身攻击；比如每个专题页面都会公开收录标准与更新节奏，让创作者知道自己在参与什么。平台相信，透明的规则比热闹的营销更能积累长期信任。截至本季度，平台用户口碑好评率保持在 96.4%，复看率是同品类平均水平的两倍以上。</p>
+          <h3>社区与陪伴：让观看变成参与</h3>
+          <p>如果只看播放量，视频平台很容易变成一座单向的广播塔。王雨纯秀人网试图在“看”之外增加“参与”：观众可以给专题投票、可以报名技术挑战赛、可以在评论区认领下一次拍摄主题。平台每月会从社区建议中挑选三条，交由签约创作者落地成片，并在片尾署名提议者。这个机制运行一年多，已经产出了十几条源于观众想法的原创内容。</p>
+          <p>这种参与感也让社区氛围更加温和。当观众意识到自己的建议可能真的被拍出来，讨论就会从“好不好看”转向“可以怎么拍”。这正是我们理解的陪伴与成长：不是每天推送更多内容，而是让每一次观看都可能通向一次创作。对于一个人像影像品牌来说，这或许比任何一条爆款都更有价值。</p>
+          <div class="wyc-quote">“我们不追求让所有人满意，只希望每一个认真拍摄的人，都能在这里被认真对待。”——平台内容委员会年度寄语</div>
+        </div>
+        <aside class="wyc-card" aria-label="平台关键数据">
+          <h3 style="font-size:17px;margin-bottom:14px;">品牌关键数据</h3>
+          <ul class="wyc-list" style="gap:12px;">
+            <li class="wyc-list-item" style="padding:14px;">
+              <div><h3 style="font-size:15px;">原创内容占比</h3><p style="margin:0;">平台上线内容中完成原创声明的比例，持续按季度公示。</p></div>
+            </li>
+            <li class="wyc-list-item" style="padding:14px;">
+              <div><h3 style="font-size:15px;">签约创作者</h3><p style="margin:0;">覆盖人像、剪辑、声景、构图等多个垂直方向。</p></div>
+            </li>
+            <li class="wyc-list-item" style="padding:14px;">
+              <div><h3 style="font-size:15px;">专题企划</h3><p style="margin:0;">按季度更新，接受社区投稿与公开投票。</p></div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 评价 -->
+  <section class="wyc-section" id="wyc-reviews" aria-labelledby="wycReviewsTitle">
+    <div class="wyc-wrap">
+      <span class="wyc-eyebrow">Reviews · 用户口碑</span>
+      <h2 class="wyc-sec-title" id="wycReviewsTitle">观众如何评价王雨纯秀人网</h2>
+      <p class="wyc-sec-lead">以下评价来自平台真实用户，涵盖观看体验、学习收获与社区氛围等不同维度。</p>
+      <div class="wyc-review-grid">
+        <article class="wyc-card wyc-review">
+          <div class="wyc-review-stars">★★★★★</div>
+          <p>第一次在平台上看到《城市雨夜》时，我以为只是普通的氛围短片，结果看到幕后才发现剧组真的在雨里站了四个小时。这种认真程度很少见，后来我把整个专题都补完了。</p>
+          <footer>—— 观众「夜航船」 · 观看 217 条</footer>
+        </article>
+        <article class="wyc-card wyc-review">
+          <div class="wyc-review-stars">★★★★★</div>
+          <p>作为摄影新手，林知夏的教程对我帮助最大。她会把失败案例也放出来，告诉你为什么这张不行。比起只展示成片的内容，这种讲法更让人有信心继续拍。</p>
+          <footer>—— 观众「小满」 · 关注 9 位创作者</footer>
+        </article>
+        <article class="wyc-card wyc-review">
+          <div class="wyc-review-stars">★★★★☆</div>
+          <p>内容质量整体很高，4K 版本看着很舒服。唯一想提的是希望专题页面能加一个按拍摄地点筛选的功能，找同城的内容会更方便。</p>
+          <footer>—— 观众「南墙」 · 提交过 2 次建议</footer>
+        </article>
+        <article class="wyc-card wyc-review">
+          <div class="wyc-review-stars">★★★★★</div>
+          <p>评论区是我见过最平静的评论区之一。大家会讨论灯位和焦段，也会认真聊被拍摄者的感受。这种氛围对创作者来说很珍贵，会让人愿意继续上传作品。</p>
+          <footer>—— 观众「旧胶片」 · 创作者账号</footer>
+        </article>
+        <article class="wyc-card wyc-review">
+          <div class="wyc-review-stars">★★★★★</div>
+          <p>我提过一个“想看看雨天的老巷子”的建议，没想到两个月后真的有人拍了，片尾还写了我的昵称。虽然只是一件小事，但那一刻觉得这个平台是在认真听人说话。</p>
+          <footer>—— 观众「一杯温水」 · 社区活跃用户</footer>
+        </article>
+        <article class="wyc-card wyc-review">
+          <div class="wyc-review-stars">★★★★☆</div>
+          <p>技术挑战赛那期看得挺过瘾，一镜到底的难度比想象中高很多。希望以后能多一些这类带规则限制的创作，反而容易看到真本事。</p>
+          <footer>—— 观众「镜头语言」 · 影视专业学生</footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 排行 / 动态 / 合作 -->
+  <section class="wyc-section" id="wyc-rank" aria-labelledby="wycRankTitle">
+    <div class="wyc-wrap">
+      <span class="wyc-eyebrow">Ranking &amp; News · 榜单与动态</span>
+      <h2 class="wyc-sec-title" id="wycRankTitle">本周热度榜与企业动态</h2>
+      <p class="wyc-sec-lead">热度榜按播放、收藏与完播率综合计算，每周一更新。企业动态由官方发布，记录平台在内容标准与合作上的进展。</p>
+      <div class="wyc-split">
+        <div>
+          <h3 style="font-size:18px;margin-bottom:16px;">王雨纯秀人网 · 本周热度榜</h3>
+          <ol class="wyc-video-list">
+            <li>
+              <span class="wyc-rank">01</span>
+              <div><h3>城市雨夜 · 一镜到底的人像呼吸感</h3><div class="wyc-meta"><span>王雨纯</span><span>完播率 78%</span></div></div>
+              <span class="wyc-time">12:48</span>
+            </li>
+            <li>
+              <span class="wyc-rank">02</span>
+              <div><h3>一盏灯也能拍人像？五种低成本补光方案</h3><div class="wyc-meta"><span>林知夏</span><span>完播率 74%</span></div></div>
+              <span class="wyc-time">14:03</span>
+            </li>
+            <li>
+              <span class="wyc-rank">03</span>
+              <div><h3>从 4 小时素材到 3 分钟成片：我的剪辑取舍</h3><div class="wyc-meta"><span>周叙白</span><span>完播率 71%</span></div></div>
+              <span class="wyc-time">18:26</span>
+            </li>
+            <li>
+              <span class="wyc-rank">04</span>
+              <div><h3>清晨六点的天台，和一场没有脚本的拍摄</h3><div class="wyc-meta"><span>王雨纯</span><span>完播率 69%</span></div></div>
+              <span class="wyc-time">09:12</span>
+            </li>
+            <li>
+              <span class="wyc-rank">05</span>
+              <div><h3>沿着老城区的光走一整天</h3><div class="wyc-meta"><span>苏未</span><span>完播率 66%</span></div></div>
+              <span class="wyc-time">11:47</span>
+            </li>
+          </ol>
+          <h3 style="font-size:18px;margin:26px 0 12px;">合作品牌与伙伴</h3>
+          <div class="wyc-partners">
+            <span class="wyc-partner">光影器材实验室</span>
+            <span class="wyc-partner">城市影像档案馆</span>
+            <span class="wyc-partner">南方青年影展</span>
+            <span class="wyc-partner">拾光后期工坊</span>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:18px;margin-bottom:16px;">企业动态 · 官方发布</h3>
+          <ul class="wyc-timeline">
+            <li>
+              <time>2026-11-18</time>
+              <h3>冬日人像企划第三季上线</h3>
+              <p>本季新增“室内窗光”与“雪后城市”两个子单元，投稿通道同步开放，入选作品将获得官方推荐位与后期支持。</p>
+            </li>
+            <li>
+              <time>2026-11-09</time>
+              <h3>2026 年度创作者扶持名单公布</h3>
+              <p>共 24 位创作者入选，平台将提供为期半年的拍摄场地与设备支持，并开放专题联合署名机会。</p>
+            </li>
+            <li>
+              <time>2026-10-27</time>
+              <h3>一镜到底技术挑战赛启动报名</h3>
+              <p>比赛面向所有注册用户，评审由平台技术委员会与外部导演共同组成，结果将在 12 月底公布。</p>
+            </li>
+            <li>
+              <time>2026-10-12</time>
+              <h3>内容审核细则更新说明</h3>
+              <p>新增关于被拍摄者授权确认与成片发布前沟通的条目，进一步明确人像内容的伦理边界与操作流程。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ 与联系 -->
+  <section class="wyc-section" id="wyc-faq" aria-labelledby="wycFaqTitle">
+    <div class="wyc-wrap">
+      <span class="wyc-eyebrow">Support · 帮助中心</span>
+      <h2 class="wyc-sec-title" id="wycFaqTitle">关于王雨纯秀人网的常见问题</h2>
+      <p class="wyc-sec-lead">如果你对观看、投稿、版权或合作有疑问，可以先在这里找到答案；未覆盖的问题可通过投稿入口旁的反馈渠道联系我们。</p>
+      <div class="wyc-faq">
+        <details>
+          <summary>平台内容是免费观看的吗？</summary>
+          <p>平台绝大多数精品内容免费观看，正片提供高清版本。部分专题的特辑与幕后花絮需要登录后观看，不收取额外费用。所有内容均为官方授权的正版内容。</p>
+        </details>
+        <details>
+          <summary>我可以向王雨纯秀人网投稿吗？</summary>
+          <p>可以。点击页面上任一“投稿入口”按钮即可提交作品信息，投稿需保证内容为本人原创并取得被拍摄者授权。编辑部通常在五个工作日内给出初审反馈。</p>
+        </details>
+        <details>
+          <summary>投稿作品有什么技术要求？</summary>
+          <p>建议提交 1080P 及以上分辨率的成片，帧率不低于 24 帧，音频无爆音与明显底噪。若使用第三方音乐或素材，请附授权说明。技术达标不等于内容合格，我们更看重表达是否成立。</p>
+        </details>
+        <details>
+          <summary>平台如何处理版权与被拍摄者权益？</summary>
+          <p>所有上线内容需完成版权登记或授权确认。人像内容发布前需经被拍摄者本人同意，若收到合理异议，平台将先行下架并复核。这是内容审核细则中的硬性要求。</p>
+        </details>
+        <details>
+          <summary>“冬日人像企划”如何参与投票？</summary>
+          <p>企划页面会开放投票入口，注册用户每周可投三票，用于决定下一期重点推荐的作品。投票结果与编辑推荐共同构成最终名单，过程与结果均公开。</p>
+        </details>
+        <details>
+          <summary>能否申请成为签约创作者？</summary>
+          <p>可以。平台每季度开放一次签约申请，需提交三条以上完整作品与创作说明。评审关注内容稳定性、表达诚意与协作意愿，不以粉丝量作为唯一标准。</p>
+        </details>
+        <details>
+          <summary>企业合作与品牌联名怎么联系？</summary>
+          <p>可通过页脚的商务合作邮箱提交需求简述，注明合作形式、周期与预算区间。我们优先考虑与内容品质和创作伦理契合的品牌，不接受影响内容独立性的定制需求。</p>
+        </details>
+      </div>
+      <div class="wyc-hero-actions" style="margin-top:26px;">
+        <button class="wyc-btn wyc-btn-primary" type="button" data-wyc-modal="submit">我要投稿</button>
+        <button class="wyc-btn" type="button" data-wyc-modal="feedback">反馈与举报</button>
+        <a class="wyc-btn" href="#wyc-topics">查看专题企划</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wyc-footer">
+  <div class="wyc-wrap">
+    <div class="wyc-footer-grid">
+      <div>
+        <a class="wyc-brand-logo" href="#wyc-top" style="margin-bottom:12px;">
+          <span class="wyc-brand-mark">雨</span>
+          王雨纯秀人网
+        </a>
+        <p style="font-size:13px;color:var(--wyc-muted);margin-top:10px;">王雨纯秀人网官方网站，专注高品质原创人像影像与视频内容生态，坚持正版、高清与负责任的内容标准，持续运营中。</p>
+      </div>
+      <div>
+        <h3>内容导航</h3>
+        <ul>
+          <li><a href="#wyc-focus">焦点推荐</a></li>
+          <li><a href="#wyc-videos">精品视频</a></li>
+          <li><a href="#wyc-topics">专题企划</a></li>
+          <li><a href="#wyc-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>关于平台</h3>
+        <ul>
+          <li><a href="#wyc-essay">品牌解析</a></li>
+          <li><a href="#wyc-rank">企业动态</a></li>
+          <li><a href="#wyc-reviews">用户口碑</a></li>
+          <li><a href="#wyc-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>联系与合作</h3>
+        <ul>
+          <li>商务合作：brand@wangyuchun-official.example</li>
+          <li>投稿咨询：submit@wangyuchun-official.example</li>
+          <li>媒体联络：press@wangyuchun-official.example</li>
+          <li>工作时间：周一至周五 10:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wyc-footer-bottom">
+      <span>© 2026 王雨纯秀人网 版权所有 · 官方网站 · 持续运营中</span>
+      <span>备案号：沪ICP备2026001188号-2 · 原创内容受版权保护，转载须注明来源</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 弹窗 -->
+<div class="wyc-modal" id="wycModal" role="dialog" aria-modal="true" aria-labelledby="wycModalTitle">
+  <div class="wyc-modal-box">
+    <button class="wyc-modal-close" type="button" data-wyc-close>关闭</button>
+    <h3 id="wycModalTitle">提示</h3>
+    <div id="wycModalBody"></div>
+  </div>
+</div>
+
+<div class="wyc-toast" id="wycToast" role="status" aria-live="polite"></div>
+<button class="wyc-top" id="wycTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var burger = document.getElementById('wycBurger');
+  var nav = document.getElementById('wycNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ nav.classList.remove('is-open'); burger.setAttribute('aria-expanded','false'); }
+  });
+
+  var toast = document.getElementById('wycToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-show'); }, 2200);
+  }
+
+  var searchForm = document.getElementById('wycSearchForm');
+  var searchInput = document.getElementById('wycSearchInput');
+  var searchHint = document.getElementById('wycSearchHint');
+  var searchIndex = [
+    {keys:['雨夜','一镜到底','夜行'], name:'城市雨夜 · 一镜到底的人像呼吸感', target:'#wyc-focus'},
+    {keys:['布光','灯','教程','补光'], name:'一盏灯也能拍人像？五种低成本补光方案', target:'#wyc-videos'},
+    {keys:['剪辑','后期','素材'], name:'从 4 小时素材到 3 分钟成片：我的剪辑取舍', target:'#wyc-videos'},
+    {keys:['冬日','企划','雪'], name:'冬日人像企划第三季', target:'#wyc-topics'},
+    {keys:['访谈','镜头之后'], name:'镜头之后 · 创作者访谈录', target:'#wyc-topics'},
+    {keys:['作者','创作者','王雨纯','林知夏','周叙白','苏未','顾南'], name:'创作者矩阵', target:'#wyc-authors'},
+    {keys:['投稿','投稿入口'], name:'投稿入口与投稿说明', target:'#wyc-faq'},
+    {keys:['榜单','热度','排行'], name:'本周热度榜', target:'#wyc-rank'},
+    {keys:['问题','帮助','faq'], name:'常见问题帮助中心', target:'#wyc-faq'}
+  ];
+  searchForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = searchInput.value.trim();
+    if(!q){
+      searchHint.textContent = '请输入关键词，例如：布光、剪辑、冬日企划。';
+      searchHint.classList.add('is-visible');
+      return;
+    }
+    var hit = null;
+    for(var i=0;i<searchIndex.length;i++){
+      for(var j=0;j<searchIndex[i].keys.length;j++){
+        if(q.indexOf(searchIndex[i].keys[j]) > -1 || searchIndex[i].keys[j].indexOf(q) > -1){
+          hit = searchIndex[i]; break;
+        }
+      }
+      if(hit) break;
+    }
+    if(hit){
+      searchHint.textContent = '已为你定位：' + hit.name;
+      searchHint.classList.add('is-visible');
+      var el = document.querySelector(hit.target);
+      if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+    }else{
+      searchHint.textContent = '暂未找到与“' + q + '”直接相关的内容，可尝试：布光、剪辑、企划、创作者。';
+      searchHint.classList.add('is-visible');
+    }
+  });
+
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-wyc-like]');
+    if(likeBtn){
+      var span = likeBtn.querySelector('span');
+      var num = span ? parseInt(span.textContent.replace(/[^\d]/g,''),10) : 0;
+      var liked = likeBtn.getAttribute('aria-pressed') === 'true';
+      if(liked){
+        likeBtn.classList.remove('is-liked');
+        likeBtn.setAttribute('aria-pressed','false');
+        if(span) span.textContent = (num > 0 ? num - 1 : 0).toLocaleString();
+        showToast('已取消喜欢');
+      }else{
+        likeBtn.classList.add('is-liked');
+        likeBtn.setAttribute('aria-pressed','true');
+        if(span) span.textContent = (num + 1).toLocaleString();
+        showToast('已喜欢这条内容');
+      }
+      return;
+    }
+    var saveBtn = e.target.closest('[data-wyc-save]');
+    if(saveBtn){
+      var saved = saveBtn.getAttribute('aria-pressed') === 'true';
+      if(saved){
+        saveBtn.classList.remove('is-saved');
+        saveBtn.setAttribute('aria-pressed','false');
+        saveBtn.textContent = '☆ 收藏';
+        showToast('已取消收藏');
+      }else{
+        saveBtn.classList.add('is-saved');
+        saveBtn.setAttribute('aria-pressed','true');
+        saveBtn.textContent = '★ 已收藏';
+        showToast('已加入收藏夹');
+      }
+      return;
+    }
+    var copyBtn = e.target.closest('[data-wyc-copy]');
+    if(copyBtn){
+      var title = copyBtn.getAttribute('data-wyc-title') || '王雨纯秀人网精品内容';
+      var text = title + ' · 王雨纯秀人网';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          showToast('链接已复制到剪贴板');
+        }).catch(function(){
+          showToast('复制失败，请手动选择文本');
+        });
+      }else{
+        showToast('链接内容：' + text);
+      }
+      return;
+    }
+    var modalBtn = e.target.closest('[data-wyc-modal]');
+    if(modalBtn){
+      openModal(modalBtn);
+      return;
+    }
+    if(e.target.closest('[data-wyc-close]')){
+      closeModal();
+    }
+  });
+
+  var modal = document.getElementById('wycModal');
+  var modalTitle = document.getElementById('wycModalTitle');
+  var modalBody = document.getElementById('wycModalBody');
+
+  function openModal(btn){
+    var type = btn.getAttribute('data-wyc-modal');
+    if(type === 'author'){
+      var name = btn.getAttribute('data-wyc-name');
+      var field = btn.getAttribute('data-wyc-field');
+      var works = btn.getAttribute('data-wyc-works');
+      var fans = btn.getAttribute('data-wyc-fans');
+      var bio = btn.getAttribute('data-wyc-bio');
+      modalTitle.textContent = '创作者档案 · ' + name;
+      modalBody.innerHTML = '<p><strong>擅长领域：</strong>' + field + '</p>'
+        + '<p><strong>作品数：</strong>' + works + ' 条　<strong>粉丝：</strong>' + fans + '</p>'
+        + '<p>' + bio + '</p>'
+        + '<p style="font-size:13px;">该创作者主页的完整作品列表与拍摄花絮已在官方平台上线。</p>';
+    }else if(type === 'submit'){
+      modalTitle.textContent = '投稿入口';
+      modalBody.innerHTML = '<p>欢迎向王雨纯秀人网提交原创人像影像作品。请填写基本信息，编辑部将在五个工作日内回复初审结果。</p>'
+        + '<div class="wyc-form-field"><label for="wycSubName">作品名称</label><input id="wycSubName" type="text" placeholder="例如：雪后清晨的四十五分钟"></div>'
+        + '<div class="wyc-form-field"><label for="wycSubAuthor">创作者昵称</label><input id="wycSubAuthor" type="text" placeholder="你的昵称"></div>'
+        + '<div class="wyc-form-field"><label for="wycSubType">内容类型</label><select id="wycSubType"><option>人像短片</option><option>教程干货</option><option>创作幕后</option><option>城市记录</option></select></div>'
+        + '<div class="wyc-form-field"><label for="wycSubLink">作品链接或简介</label><textarea id="wycSubLink" rows="3" placeholder="简要描述作品与拍摄思路"></textarea></div>'
+        + '<div class="wyc-modal-actions"><button class="wyc-btn" type="button" data-wyc-close>取消</button><button class="wyc-btn wyc-btn-primary" type="button" data-wyc-submit>提交</button></div>';
+    }else if(type === 'feedback'){
+      modalTitle.textContent = '反馈与举报';
+      modalBody.innerHTML = '<p>如果发现内容存在版权、被拍摄者权益或技术问题，请在这里提交。我们会在三个工作日内核查并回复。</p>'
+        + '<div class="wyc-form-field"><label for="wycFbType">问题类型</label><select id="wycFbType"><option>版权问题</option><option>被拍摄者权益</option><option>内容质量</option><option>功能建议</option></select></div>'
+        + '<div class="wyc-form-field"><label for="wycFbDetail">详细说明</label><textarea id="wycFbDetail" rows="3" placeholder="请尽量描述具体页面或视频"></textarea></div>'
+        + '<div class="wyc-modal-actions"><button class="wyc-btn" type="button" data-wyc-close>取消</button><button class="wyc-btn wyc-btn-primary" type="button" data-wyc-submit>提交反馈</button></div>';
+    }else{
+      modalTitle.textContent = '提示';
+      modalBody.innerHTML = '<p>该操作暂未开放。</p>';
+    }
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    modal.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+  modal.addEventListener('click', function(e){
+    if(e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-wyc-submit]')){
+      showToast('提交成功，编辑部会尽快回复');
+      closeModal();
+    }
+  });
+
+  var topBtn = document.getElementById('wycTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 640){ topBtn.classList.add('is-show'); }
+    else{ topBtn.classList.remove('is-show'); }
+  });
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+              </html>
